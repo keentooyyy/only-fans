@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from '../big-components/home/home.component';
 import { NavbarComponent } from '../shared-components/navbar/navbar.component';
 import { FooterComponent } from '../shared-components/footer/footer.component';
+import {SwiperModule} from "swiper/angular";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from '../shared-components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [
     Title

@@ -39,17 +39,26 @@
 }
 
 .popular{
+
   .popular-products-categories{
     margin: 100px 36px 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 25px;
+
+    .swiper-button-next,.swiper-button-prev {
+      transform: translate(0% ,-40%);
+    }
+
+    .swiper-wrapper{
+      transition-duration: .5s !important;
+    }
     .popular-product-category{
       img {
         padding: 20px;
         min-height: 200px;
         min-width: 200px;
-        outline: $outline-color 1px solid;
+        border: $outline-color 1px solid;
         border-radius: 5px;
         margin-bottom: 20px;
       }
@@ -67,9 +76,8 @@
 
 
     }
-  }
-  .popular-product-category:nth-child(3){
-    display: none;
+
+
   }
 }
 
