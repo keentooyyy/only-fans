@@ -1,0 +1,52 @@
+@import "src/styles";
+
+.hero {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+  .hero-text {
+    padding-left: 69px;
+    button {
+      margin-top: 40px;
+      border-radius: 50px;
+      border-color: transparent;
+      background-color: $main-color;
+      width: 200px;
+      height: 50px;
+      font-weight: 700;
+      color: white;
+    }
+
+  }
+  img {
+    z-index: -1;
+  }
+}
+
+.feature{
+  margin-top: 100px;
+  .title{
+    display: grid;
+    justify-items: center;
+    h1{
+      font-weight: 500;
+      font-size: 24px;
+    }
+    .underline{
+      width: 80px;
+      margin-top: 10px;
+      border-bottom: $main-color solid 2px;
+    }
+  }
+
+}
+
+
+
+//helper class
+.bold {
+  font-size: 40px;
+  font-weight: 600;
+}

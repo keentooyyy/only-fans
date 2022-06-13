@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import "resets";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap');
+
+$box-shadow:  0px 3px 8px 1px rgba(0, 0, 0, 0.37);
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+$main-color: #00AFF0;

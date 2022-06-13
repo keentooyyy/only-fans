@@ -1,0 +1,19 @@
+@import "src/styles.scss";
+
+nav{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 20px 36px;
+  box-shadow: $box-shadow;
+  align-items: center;
+  div {
+    display: grid;
+    justify-items: end;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .svg {
+    max-width: 30px;
+  }
+}
+
