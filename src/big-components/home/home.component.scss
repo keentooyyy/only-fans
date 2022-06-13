@@ -32,41 +32,7 @@
 .feature{
   margin-top: 100px;
 
-  .featured-products
-  {
-    margin-top: 80px;
-    display: grid;
-    justify-items: center;
-    .product{
-      margin: 0 36px 50px;
-      border-radius: 15px;
-      display: grid;
-      align-items: center;
-      grid-template-columns: repeat(2, 1fr);
-      box-shadow: $product-box-shadow;
-      min-width: 400px;
 
-      .image-product {
-        padding: 30px 10px;
-        z-index: -1;
-      }
-
-      .product-text{
-        p:first-child {
-          font-size: 18px;
-          font-weight: 700;
-          margin-bottom: 10px;
-        }
-        p:nth-child(2){
-          font-weight: 300;
-          font-size: 14px;
-          margin-bottom: 10px;
-        }
-      }
-
-
-    }
-  }
 
 }
 
@@ -75,7 +41,7 @@
     margin: 100px 36px 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 50px;
+    gap: 25px;
     .popular-product-category{
       img {
         height: 300px;
@@ -96,6 +62,10 @@
       }
     }
   }
+}
+
+.hot-deals{
+  margin-top: 100px;
 }
 
 
@@ -129,4 +99,53 @@ button {
 }
 .svg{
   width: 10px;
+}
+.products {
+  margin-top: 80px;
+  display: grid;
+  justify-items: center;
+  .product{
+    margin: 0 36px 50px;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: $product-box-shadow;
+    min-width: 400px;
+
+    .image-product {
+      padding: 30px 10px;
+      z-index: -1;
+    }
+
+    .product-text{
+      p:nth-child(1){
+        font-size: 15px;
+        font-weight: 100;
+      }
+      p:nth-child(2) {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      p:nth-child(3){
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      span:nth-child(5){
+        color: $main-color;
+        font-weight: 700;
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 30px;
+        margin-right: 10px;
+      }
+      span:nth-child(6){
+        text-decoration: line-through;
+        color: $outline-color;
+        font-size: 15px;
+      }
+    }
+  }
 }
