@@ -17,4 +17,12 @@ nav{
     max-width: 30px;
   }
 }
-
+@media only screen and (min-width: 762px) {
+  nav{
+    padding: 20px 95px;
+    img {
+      width: 120px;
+      place-self: center;
+    }
+  }
+}
