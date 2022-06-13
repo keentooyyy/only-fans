@@ -75,6 +75,11 @@
 
 .hot-deals{
   margin-top: 100px;
+  .products{
+    .product:nth-child(2){
+      display: none;
+    }
+  }
 }
 
 @media only screen and (min-width: 762px) {
@@ -141,6 +146,9 @@
       .product{
         margin: 0;
       }
+      .product:nth-child(2){
+        display: grid;
+      }
 
     }
 
@@ -170,7 +178,6 @@
 }
 button {
   color: $main-color;
-  margin-top: 50px;
   padding: 0;
   font-weight: 700;
   border: transparent;
@@ -200,33 +207,33 @@ button {
 
     .product-text{
     width: 90%;
-      p:nth-child(1){
-        font-size: 15px;
-        font-weight: 100;
-      }
-      p:nth-child(2) {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-      p:nth-child(3){
-        font-weight: 300;
-        font-size: 14px;
-        margin-bottom: 10px;
+      padding: 30px 0;
+      img {
+        margin-bottom: 30px;
       }
       span:nth-child(5){
+        font-size: 24px;
         color: $main-color;
-        font-weight: 700;
-        font-size: 20px;
-        display: inline-block;
-        margin-top: 30px;
-        margin-right: 10px;
+        margin-right: 20px;
       }
       span:nth-child(6){
-        text-decoration: line-through;
+        font-size: 18px;
+        font-weight: 300;
         color: $outline-color;
-        font-size: 15px;
+        text-decoration: line-through;
       }
     }
   }
+  .product-title{
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .product-subtitle{
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+  .product-category{
+    font-weight: 100;
+  }
+
 }
