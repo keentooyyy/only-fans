@@ -7,15 +7,19 @@
   align-items: center;
 
   .hero-text {
-    padding-left: 69px;
+    margin-left: 36px;
+    div:first-child{
+      font-weight: 300;
+    }
     button {
       margin-top: 40px;
       border-radius: 50px;
       border-color: transparent;
       background-color: $main-color;
-      width: 200px;
-      height: 50px;
+      width: 180px;
+      height: 40px;
       font-weight: 700;
+      font-size: 15px;
       color: white;
     }
 
@@ -27,26 +31,102 @@
 
 .feature{
   margin-top: 100px;
-  .title{
+
+  .featured-products
+  {
+    margin-top: 80px;
     display: grid;
     justify-items: center;
-    h1{
-      font-weight: 500;
-      font-size: 24px;
-    }
-    .underline{
-      width: 80px;
-      margin-top: 10px;
-      border-bottom: $main-color solid 2px;
+    .product{
+      margin: 0 36px 50px;
+      border-radius: 15px;
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+      box-shadow: $product-box-shadow;
+      min-width: 400px;
+
+      .image-product {
+        padding: 30px 10px;
+        z-index: -1;
+      }
+
+      .product-text{
+        p:first-child {
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        p:nth-child(2){
+          font-weight: 300;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+
+
     }
   }
 
+}
+
+.popular{
+  .popular-products-categories{
+    margin: 100px 36px 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    .popular-product-category{
+      img {
+        height: 300px;
+        outline: $outline-color 1px solid;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      p:nth-child(2)
+      {
+        font-weight: 700;
+      }
+      p:nth-child(3)
+      {
+        font-weight: 100;
+      }
+      .pop-button{
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 
 
 //helper class
 .bold {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
+}
+.title{
+  display: grid;
+  justify-items: center;
+  h1{
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .underline{
+    width: 80px;
+    margin-top: 10px;
+    border-bottom: $main-color solid 2px;
+  }
+}
+button {
+  color: $main-color;
+  margin-top: 50px;
+  padding: 0;
+  font-weight: 700;
+  border: transparent;
+  background-color: transparent;
+  margin-right: 5px;
+}
+.svg{
+  width: 10px;
 }

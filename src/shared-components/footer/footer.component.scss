@@ -1,0 +1,16 @@
+@import "src/styles";
+footer{
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  box-shadow: $footer-box-shadow;
+  .icons{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 20px 36px;
+    justify-items: center;
+    .svg{
+      width: 30px;
+    }
+  }
+}
