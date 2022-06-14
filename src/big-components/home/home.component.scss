@@ -37,7 +37,8 @@
 
 .feature {
   margin-top: 100px;
-  .featured-products{
+
+  .featured-products {
     margin-top: 50px;
     margin-left: 36px;
     margin-right: 36px;
@@ -66,7 +67,6 @@
 
     }
   }
-
 
 
 }
@@ -133,20 +133,23 @@
       box-shadow: $product-box-shadow;
       border-radius: 15px;
       align-items: center;
-      .product-text{
+
+      .product-text {
         width: 90%;
       }
+
       .rating {
         margin-bottom: 50px;
       }
 
-      .discounted-price{
+      .discounted-price {
         font-size: 18px;
         color: $main-color;
         margin-right: 10px;
         font-weight: 500;
       }
-      .regular-price{
+
+      .regular-price {
         text-decoration: line-through;
       }
     }
@@ -157,14 +160,16 @@
 
 //media queries
 @media only screen and (min-width: 762px) {
-  .hero{
-    .hero-text{
+  .hero {
+    .hero-text {
       margin-left: 95px;
       width: 360px;
+
       .bold {
         font-size: 30px;
       }
-      button{
+
+      button {
         width: 180px;
         height: 50px;
       }
@@ -172,12 +177,13 @@
   }
 
 
-  .feature{
-    .featured-products{
+  .feature {
+    .featured-products {
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
-      .product{
+
+      .product {
         margin: 0;
       }
     }
@@ -189,9 +195,9 @@
   }
 
 
-  .hot-deals{
-    .hot-deal-products{
-      .product{
+  .hot-deals {
+    .hot-deal-products {
+      .product {
         margin: 75px;
       }
     }
@@ -199,6 +205,94 @@
 
 }
 
+@media only screen and (min-width: 1050px) {
+
+  .hero {
+    .hero-text {
+      width: 500px;
+
+      div:nth-child(1) {
+        font-size: 24px;
+      }
+
+      .bold {
+        font-size: 55px;
+      }
+    }
+  }
+
+  .feature {
+    .title {
+      h1 {
+
+        font-size: 35px;
+      }
+    }
+
+    .featured-products {
+      margin-top: 100px;
+      gap: 50px;
+    }
+  }
+
+  .popular{
+    .title {
+      h1 {
+
+        font-size: 35px;
+      }
+    }
+  }
+
+  .hot-deals {
+    .title {
+      h1 {
+
+        font-size: 35px;
+      }
+    }
+    .hot-deal-products {
+      .product {
+        margin: 25px 0 50px;
+      }
+
+      .image-product {
+        width: 210px;
+        margin: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1250px){
+  .hero{
+    margin-left: 5em;
+  }
+  .feature{
+    margin: 0 3em;
+  }
+  .popular{
+    .popular-products-categories{
+      margin: 100px 5em 0;
+    }
+  }
+  .hot-deals{
+    .hot-deal-products{
+      margin: 100px 3em;
+    }
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .hot-deals{
+    .hot-deal-products {
+
+      .image-product {
+        width: 260px;
+        margin: 5px;
+      }
+    }
+  }
+}
 
 
 //helper class

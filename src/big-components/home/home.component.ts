@@ -20,12 +20,26 @@ export class HomeComponent implements OnInit {
       },
       840: {
         slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 20
+      },
+      1250: {
+        slidesPerView:4,
+        slidesPerGroup:4,
+        spaceBetween:20
       }
     }
   }
   hot_deals_config: SwiperOptions = {
     modules: [Navigation], slidesPerView: 1, slidesPerGroup: 1, navigation: true, // spaceBetween: 10,
     breakpoints: {
+      1050: {
+        slidesPerView:2,
+        slidesPerGroup:1,
+        spaceBetween:20
+      },
+      1250: {
+        slidesPerView:2,
+        slidesPerGroup:2,
+      }
     }
   }
 

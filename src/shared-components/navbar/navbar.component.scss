@@ -47,7 +47,7 @@ nav {
 }
 
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1050px) {
   nav {
     box-shadow: none;
     padding: 35px 95px;
@@ -67,10 +67,13 @@ nav {
     }
 
     .side-items {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(5, 1fr);
 
       .full-search {
         position: relative;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        width: 100%;
 
         input {
           display: initial;
@@ -79,7 +82,7 @@ nav {
           fill: transparent;
           padding: 9px 6px 9px 45px;
           font-size: 12px;
-          width: 180px;
+          width: 100%;
         }
 
         .svg {
