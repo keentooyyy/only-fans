@@ -1,16 +1,19 @@
 @import "src/styles";
-footer{
+
+footer {
   z-index: 11;
   position: sticky;
   bottom: 0;
   background-color: white;
   box-shadow: $footer-box-shadow;
-  .icons{
+
+  .icons {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    padding: 20px 36px;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 20px 0px;
     justify-items: center;
-    .svg{
+
+    .svg {
       width: 30px;
     }
   }

@@ -12,26 +12,25 @@ Swiper.use([Navigation])
 })
 export class HomeComponent implements OnInit {
   title = "Home"
-  slidesPerview = 2
-  public innerWidth: any
 
-
-  config: SwiperOptions = {
-    modules: [Navigation],
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    navigation: true,
-    spaceBetween: 20,
-    breakpoints: {
-      960: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
+  popular_category_config: SwiperOptions = {
+    modules: [Navigation], slidesPerView: 2, slidesPerGroup: 2, navigation: true, spaceBetween: 20, breakpoints: {
+      300: {
+        slidesPerView: 1, slidesPerGroup: 1
       },
-      1200: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
+      500: {
+        slidesPerView: 2, slidesPerGroup: 2
+      },
+      960: {
+        slidesPerView: 3, slidesPerGroup: 3,
+      }, 1200: {
+        slidesPerView: 4, slidesPerGroup: 4,
       }
     }
+  }
+  hot_deals_config: SwiperOptions = {
+    modules: [Navigation], slidesPerView: 1, slidesPerGroup: 1, navigation: true, // spaceBetween: 10,
+    breakpoints: {}
   }
 
 
