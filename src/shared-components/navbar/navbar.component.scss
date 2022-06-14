@@ -126,6 +126,16 @@ nav {
       }
     }
   }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .sub-nav{
+    .links{
+      width: 1200px;
+    }
+  }
+
 }
 
 
