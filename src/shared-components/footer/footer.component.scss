@@ -19,5 +19,19 @@ footer {
   }
 }
 
-@import "footer-component-media-queries";
+//media queries
+@media only screen and (min-width: 762px) {
+  footer{
+    .icons {
+      padding: 20px 0;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 950px) {
+  footer {
+    display: none;
+  }
+}
 
