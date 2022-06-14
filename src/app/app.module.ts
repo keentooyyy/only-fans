@@ -7,13 +7,15 @@ import {HomeComponent} from '../big-components/home/home.component';
 import {NavbarComponent} from '../shared-components/navbar/navbar.component';
 import {FooterComponent} from '../shared-components/footer/footer.component';
 import {SwiperModule} from "swiper/angular";
+import { CartComponent } from '../big-components/cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

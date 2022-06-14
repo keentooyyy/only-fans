@@ -6,13 +6,15 @@
   <div class="hamburger">
     <object class="svg" data="assets/svg/menu-burger-free-icon-font.svg"></object>
   </div>
-  <img alt="" src="assets/img/Only%20Fans%20Logo.png">
+  <img alt="" src="assets/img/Only%20Fans%20Logo.png" (click)="toHome()" class="pointer">
   <div class="side-items">
     <div class="full-search">
       <input placeholder="Search here...">
       <object class="svg" data="assets/svg/search-free-icon-font.svg"></object>
     </div>
-    <object class="svg" data="assets/svg/shopping-cart-free-icon-font.svg"></object>
+    <div (click)="toCart()" class="pointer">
+      <object  class="svg" data="assets/svg/shopping-cart-free-icon-font.svg"></object>
+    </div>
   </div>
 </nav>
 

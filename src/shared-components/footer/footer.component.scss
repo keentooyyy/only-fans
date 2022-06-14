@@ -13,10 +13,16 @@ footer {
     padding: 20px 0;
     justify-items: center;
 
-    .svg {
-      width: 30px;
-    }
+
   }
+
+}
+.svg {
+  width: 30px;
+  pointer-events: none;
+}
+.pointer{
+  cursor: pointer;
 }
 
 //media queries

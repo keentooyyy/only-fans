@@ -25,9 +25,12 @@ nav {
 
 
 }
-
+.pointer {
+  cursor: pointer;
+}
 .svg {
   width: 30px;
+  pointer-events: none;
 }
 
 .sub-nav {
