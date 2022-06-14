@@ -31,15 +31,16 @@ export class HomeComponent implements OnInit {
   hot_deals_config: SwiperOptions = {
     modules: [Navigation], slidesPerView: 1, slidesPerGroup: 1, navigation: true, // spaceBetween: 10,
     breakpoints: {
-      1050: {
-        slidesPerView:2,
-        slidesPerGroup:1,
-        spaceBetween:20
-      },
-      1250: {
+      850: {
         slidesPerView:2,
         slidesPerGroup:2,
-      }
+        spaceBetween:20
+      },
+      1050: {
+        slidesPerView:3,
+        slidesPerGroup:3,
+        spaceBetween:20
+      },
     }
   }
 

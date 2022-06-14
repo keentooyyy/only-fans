@@ -115,9 +115,13 @@
 
 .hot-deals {
   margin-top: 100px;
+  margin-bottom: 100px;
 
+  .title{
+    margin-bottom: 100px;
+  }
   .hot-deal-products {
-    margin-top: 100px;
+    margin: 0 36px;
 
 
     .swiper-slide {
@@ -127,19 +131,20 @@
     }
 
     .product {
-      margin: 50px 40px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      box-shadow: $product-box-shadow;
       border-radius: 15px;
       align-items: center;
+      border: 1px solid $outline-color;
 
-      .product-text {
-        width: 90%;
+      .product-text{
+        margin-left: -10px;
+        padding: 40px 0;
+        width: 80%;
       }
 
       .rating {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
       }
 
       .discounted-price {
@@ -195,13 +200,6 @@
   }
 
 
-  .hot-deals {
-    .hot-deal-products {
-      .product {
-        margin: 75px;
-      }
-    }
-  }
 
 }
 
@@ -252,8 +250,8 @@
       }
     }
     .hot-deal-products {
-      .product {
-        margin: 25px 0 50px;
+      .product{
+        width: 100%;
       }
 
       .image-product {
@@ -277,11 +275,9 @@
     }
   }
   .hot-deals{
-    .hot-deal-products{
-      margin: 100px 3em;
-    }
   }
 }
+
 @media only screen and (min-width: 1300px) {
   .hot-deals{
     .hot-deal-products {
