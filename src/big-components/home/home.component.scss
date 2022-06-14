@@ -127,17 +127,17 @@
     }
 
     .product {
-      margin: 50px 36px;
+      margin: 50px 40px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       box-shadow: $product-box-shadow;
       border-radius: 15px;
       align-items: center;
-      img {
-        margin-bottom: 50px;
-      }
       .product-text{
         width: 90%;
+      }
+      .rating {
+        margin-bottom: 50px;
       }
 
       .discounted-price{

@@ -1,0 +1,42 @@
+@media only screen and (min-width: 762px) {
+  .hero{
+    .hero-text{
+      margin-left: 95px;
+      width: 360px;
+      .bold {
+        font-size: 30px;
+      }
+      button{
+        width: 180px;
+        height: 50px;
+      }
+    }
+  }
+
+
+  .feature{
+    .featured-products{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 30px;
+      .product{
+        margin: 0;
+      }
+    }
+  }
+
+
+  .popular {
+    margin-top: 100px;
+  }
+
+
+  .hot-deals{
+    .hot-deal-products{
+      .product{
+        margin: 75px;
+      }
+    }
+  }
+
+}
