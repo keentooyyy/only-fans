@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from "@angular/router";
+import {RouterMethodsService} from "../../services/router-methods.service";
 
 @Component({
   selector: 'app-footer',
@@ -8,15 +8,9 @@ import {Router} from "@angular/router";
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private router: Router) {
+  constructor(public routerMethod: RouterMethodsService) {
   }
 
   ngOnInit(): void {
-  }
-  toHome(){
-    this.router.navigateByUrl('')
-  }
-  toCart(){
-    this.router.navigateByUrl('cart')
   }
 }
