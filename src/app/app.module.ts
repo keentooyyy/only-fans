@@ -7,6 +7,7 @@ import {HomeComponent} from '../big-components/home/home.component';
 import {NavbarComponent} from '../shared-components/navbar/navbar.component';
 import {FooterComponent} from '../shared-components/footer/footer.component';
 import {SwiperModule} from "swiper/angular";
+import { RouteBannerComponent } from '../shared-components/route-banner/route-banner.component';
 import { CartComponent } from '../big-components/cart/cart.component';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { CartComponent } from '../big-components/cart/cart.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
+    RouteBannerComponent,
     CartComponent
   ],
   imports: [

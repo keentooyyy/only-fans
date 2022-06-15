@@ -1,1 +1,61 @@
 @import "src/styles";
+
+.cart{
+  display: grid;
+  justify-items: center;
+  margin-top: 100px;
+  .cart-items{
+    width: 95%;
+    border: solid 1px $outline-color;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
+    img {
+      margin-left: -20px;
+    }
+
+    .cart-text{
+      position: relative;
+      padding: 20px 0;
+      width: 90%;
+      .product-title{
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .product-price{
+        color: $main-color;
+        font-weight: 700;
+      }
+      .qty-container{
+        margin: 20px 0;
+        span{
+          font-weight: 100;
+        }
+        input {
+          width: 30%;
+        }
+      }
+      .sub-total-container{
+        span:nth-child(1){
+          font-weight: 100;
+          color: black;
+        }
+        span{
+          font-weight: 700;
+          color: $main-color;
+        }
+      }
+      .close-icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+.svg {
+  height: 15px;
+}
