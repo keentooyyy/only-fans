@@ -267,11 +267,15 @@
     margin-left: 5em;
   }
   .feature{
-    margin: 0 3em;
+    .featured-products{
+      grid-template-columns: repeat(3, 1fr);
+      margin: 100px 0;
+    }
+    margin: 175px 5em;
   }
   .popular{
     .popular-products-categories{
-      margin: 100px 5em 0;
+      margin: 100px  5em;
     }
   }
   .hot-deals{
@@ -282,17 +286,6 @@
   }
 }
 
-@media only screen and (min-width: 1300px) {
-  .hot-deals{
-    .hot-deal-products {
-
-      .image-product {
-        width: 260px;
-        margin: 5px;
-      }
-    }
-  }
-}
 
 
 //helper class

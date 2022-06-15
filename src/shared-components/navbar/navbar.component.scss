@@ -129,11 +129,9 @@ nav {
 
 }
 
-@media only screen and (min-width: 1200px) {
-  .sub-nav{
-    .links{
-      width: 1200px;
-    }
+@media only screen and (min-width: 1250px) {
+  nav{
+    padding: 35px 150px;
   }
 
 }
