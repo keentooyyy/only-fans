@@ -23,7 +23,7 @@ export class CartComponent implements OnInit {
 
   addValue() {
     this.quantity.setValue(this.quantity.value + 1)
-    console.log(this.quantity.value)
+    // console.log(this.quantity.value)
     this.calcSubtotal()
   }
   decreaseValue(){
@@ -32,7 +32,7 @@ export class CartComponent implements OnInit {
     }
     else {
       this.quantity.setValue(this.quantity.value - 1)
-      console.log(this.quantity.value)
+      // console.log(this.quantity.value)/
     }
     this.calcSubtotal()
   }
