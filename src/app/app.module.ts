@@ -7,28 +7,15 @@ import {HomeComponent} from '../big-components/home/home.component';
 import {NavbarComponent} from '../shared-components/navbar/navbar.component';
 import {FooterComponent} from '../shared-components/footer/footer.component';
 import {SwiperModule} from "swiper/angular";
-import { RouteBannerComponent } from '../shared-components/route-banner/route-banner.component';
-import { CartComponent } from '../big-components/cart/cart.component';
+import {RouteBannerComponent} from '../shared-components/route-banner/route-banner.component';
+import {CartComponent} from '../big-components/cart/cart.component';
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    NavbarComponent,
-    FooterComponent,
-    RouteBannerComponent,
-    CartComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SwiperModule
-  ],
-  providers: [
-    Title,
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
-  ],
+  declarations: [AppComponent, HomeComponent, NavbarComponent, FooterComponent, RouteBannerComponent, CartComponent],
+  imports: [BrowserModule, AppRoutingModule, SwiperModule, ReactiveFormsModule],
+  providers: [Title, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule {

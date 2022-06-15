@@ -7,14 +7,22 @@
       <div class="product-price">₱ 3,000</div>
       <div class="qty-container">
         <span>Qty: </span>
-        <input type="number">
+        <div class="plus-minus-button">
+          <input  type="number" [formControl]="quantity" >
+          <div  (click)="addValue()" class="buttons plus">+</div>
+          <div (click)="decreaseValue()"  class="buttons minus">-</div>
+        </div>
       </div>
       <div class="sub-total-container">
-        <span>Subtotal: </span> <span>₱ 3,000</span>
+        <span>Subtotal: </span> <span>₱ {{subtotal | number}}</span>
       </div>
       <div class="close-icon">
         <object data="assets/svg/cross-free-icon-font.svg" type="" class="svg"></object>
       </div>
     </div>
+  </div>
+  <div class="cart-buttons">
+    <button>CONTINUE SHOPPING</button>
+    <button>CLEAR SHOPPING CART</button>
   </div>
 </div>
