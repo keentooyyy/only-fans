@@ -9,6 +9,7 @@ import {FooterComponent} from '../shared-components/footer/footer.component';
 import {SwiperModule} from "swiper/angular";
 import { RouteBannerComponent } from '../shared-components/route-banner/route-banner.component';
 import { CartComponent } from '../big-components/cart/cart.component';
+import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CartComponent } from '../big-components/cart/cart.component';
     SwiperModule
   ],
   providers: [
-    Title
+    Title,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })

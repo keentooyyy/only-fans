@@ -34,7 +34,15 @@
           font-weight: 100;
         }
         input {
-          width: 30%;
+          width: 50%;
+          border-radius: 15px;
+          text-align: center;
+          border: solid 1px $outline-color;
+          font-size: 10px;
+          height: 30px;
+          &:focus{
+            outline: none;
+          }
         }
       }
       .sub-total-container{
