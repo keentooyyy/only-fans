@@ -15,6 +15,7 @@
     align-items: center;
     position: relative;
 
+
     img {
       margin-left: -20px;
       min-width: 200px;
@@ -134,11 +135,11 @@
 
       .price{
         text-align: right;
-        color: $main-color  ;
+        color: $main-color ;
       }
       .title {
         font-weight: 100;
-        text-align: left;
+        place-self: start;
       }
       .order-total{
         font-size: 18px;
@@ -215,6 +216,63 @@
 
 }
 
+@media only screen and (min-width: 1050px){
+  .cart {
+    position: relative;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+    margin-left: 3em;
+    margin-right: 3em;
+    .cart-items{
+      width: 100%;
+
+    }
+
+    .cart-buttons{
+      gap: 20px;
+      grid-row-start: 2;
+      grid-template-columns: repeat(2, 1fr);
+      font-size: 15px;
+    }
+    .cart-summary{
+      margin-top: 0;
+      width: 100%;
+      .cart-summary-total{
+        .title{
+          text-align: left;
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+    }
+    button.mt-20{
+      height: 65px;
+      place-self: end;
+    }
+
+    .vertical-line {
+      border-left: solid 1px $outline-color;
+      opacity: .5;
+      height: 550px;
+      position: absolute;
+      top: -42px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .cart {
+    margin-left: 5em;
+    margin-right: 5em;
+    column-gap: 100px;
+
+    button.mt-20{
+      height: 65px;
+    }
+  }
+}
 .svg {
   height: 15px;
 }
