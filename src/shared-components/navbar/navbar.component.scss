@@ -1,10 +1,18 @@
 @import "src/styles.scss";
-
-.nav-shadow {
+nav {
   box-shadow: $nav-box-shadow;
 }
 
 .input-custom-style{
   padding: 0 3.5em;
   font-size: .75em;
+}
+
+@media (min-width: 992px){
+  .my-account{
+    display: grid !important;
+  }
+  nav {
+    box-shadow: none;
+  }
 }
