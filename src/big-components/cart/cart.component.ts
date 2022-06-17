@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import {FormControl} from "@angular/forms";
+import {RouterMethodsService} from "../../services/router-methods.service";
 
 @Component({
   selector: 'app-cart', templateUrl: './cart.component.html', styleUrls: ['./cart.component.scss']
@@ -13,7 +14,7 @@ export class CartComponent implements OnInit {
   subtotal = 0
   order_total = 0
   shipping_fee = 500
-  constructor(private TitleService: Title) {
+  constructor(private TitleService: Title, public routerMethods: RouterMethodsService) {
   }
 
   ngOnInit(): void {

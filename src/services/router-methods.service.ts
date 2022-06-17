@@ -13,4 +13,7 @@ export class RouterMethodsService {
   toCart(){
     this.router.navigateByUrl('cart')
   }
+  toCheckout(){
+    this.router.navigateByUrl('checkout')
+  }
 }
