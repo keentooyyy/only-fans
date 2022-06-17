@@ -1,12 +1,17 @@
-<div>
-  <div class="banner">
-    <img alt="" class="banner-picture" src="assets/img/4907157.jpg">
-    <div class="banner-text">
-      <h1>{{currentRoute}}</h1>
-      <a routerLink="/">Home</a>
-      <span> > </span>
-      <span class="current-route">{{currentRoute}}</span>
+<section>
+  <div class="tw-relative">
+
+    <img alt="" class="tw-w-full tw-object-cover" src="assets/img/4907157.jpg">
+    <div class="tw-absolute aboslute-center tw-w-11/12">
+      <h1 class="tw-text-center tw-font-extrabold text-3xl">{{currentRoute}}</h1>
+
+      <div class='tw-mt-9 tw-text-center md:tw-text-xl'>
+        <a routerLink="/">Home</a>
+        <span> > </span>
+        <span class="color-main">{{currentRoute}}</span>
+      </div>
+
 
     </div>
   </div>
-</div>
+</section>
