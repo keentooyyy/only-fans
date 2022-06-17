@@ -1,1 +1,10 @@
 @import "src/styles.scss";
+
+.nav-shadow {
+  box-shadow: $nav-box-shadow;
+}
+
+.input-custom-style{
+  padding: 0 3.5em;
+  font-size: .75em;
+}

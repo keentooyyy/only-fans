@@ -13,4 +13,8 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  test(){
+    console.log("123")
+  }
 }

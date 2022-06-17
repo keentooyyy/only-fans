@@ -1,31 +1,47 @@
 <nav>
-  <div class="user-account">
-    <object class="svg" data="assets/svg/user-free-icon-font.svg" type=""></object>
-    <span>My Account</span>
-  </div>
-  <div class="hamburger">
-    <object class="svg" data="assets/svg/menu-burger-free-icon-font.svg"></object>
-  </div>
-  <img alt="" src="assets/img/Only%20Fans%20Logo.png" (click)="routerMethod.toHome()" class="pointer">
-  <div class="side-items">
-    <div class="full-search">
-      <input placeholder="Search here...">
-      <object class="svg" data="assets/svg/search-free-icon-font.svg"></object>
+  <div class="container tw-grid tw-grid-cols-3 tw-items-center xs:tw-py-5 lg:tw-py-4">
+    <div class="xs:tw-hidden lg:tw-flex tw-items-center tw-gap-2">
+      <object class="tw-h-10 tw-cursor-pointer" data="assets/svg/user-free-icon-font.svg" type=""></object>
+      <span class="tw-cursor-pointer tw-text-xs">My Account</span>
     </div>
-    <div (click)="routerMethod.toCart()" class="pointer">
-      <object  class="svg" data="assets/svg/shopping-cart-free-icon-font.svg"></object>
+    <div class="lg:tw-hidden">
+      <object class="xs:tw-h-7 md:tw-h-10" data="assets/svg/menu-burger-free-icon-font.svg"></object>
     </div>
+    <img alt="" src="assets/img/Only%20Fans%20Logo.png" (click)="routerMethod.toHome()" class="tw-cursor-pointer tw-w-48 tw-place-self-center">
+
+
+    <div class="xs:tw-grid xs:tw-grid-cols-2 tw-place-items-end tw-items-center lg:tw-grid-cols-3">
+      <div class="tw-relative tw-h-full lg:tw-col-span-2 lg:tw-w-full">
+        <input class="xs:tw-hidden lg:tw-block tw-border border-main tw-w-full tw-h-full tw-rounded-md input-custom-style" type="text" placeholder="Search Here..">
+        <div class="xs:tw-h-7 md:tw-h-10 lg:tw-absolute lg:tw-left-0 lg:tw-top-0">
+          <svg class="lg:tw-p-2"  height="" style="enable-background:new 0 0 512 512" version="1.1" viewBox="0 0 24 24" width="" x="0"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg" y="0"><g><path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z" data-original="#000000" fill="#00aff0" xmlns="http://www.w3.org/2000/svg"/></g></svg>
+        </div>
+      </div>
+      <div (click)="routerMethod.toCart()" class="tw-cursor-pointer xs:tw-h-7 md:tw-h-10">
+        <svg class="" height="" style="enable-background:new 0 0 512 512" version="1.1" viewBox="0 0 24 24" width="" x="0"
+             xml:space="preserve"
+             xmlns="http://www.w3.org/2000/svg" y="0"><g><path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z" data-original="#000000" fill="#00aff0" xmlns="http://www.w3.org/2000/svg"/><circle
+          cx="7" cy="22" data-original="#000000" fill="#00aff0" r="2" xmlns="http://www.w3.org/2000/svg"/><circle
+          cx="17" cy="22" data-original="#000000" fill="#00aff0" r="2" xmlns="http://www.w3.org/2000/svg"/></g></svg>
+      </div>
+    </div>
+
+
+
   </div>
+
 </nav>
 
-<div class="sub-nav">
-  <div class="links">
-    <ul>
-      <li (click)="routerMethod.toHome()" class="pointer">Home</li>
-      <li class="pointer">FAQ</li>
-      <li class="pointer">Shop</li>
-      <li class="pointer">About us</li>
-      <li class="pointer">Contact us</li>
+<div class="xs:tw-hidden lg:tw-flex tw-justify-center tw-border border-main">
+  <div class="tw-flex tw-justify-center tw-w-9/12 tw-my-10">
+    <ul class=" tw-grid tw-w-full tw-grid-cols-5 tw-justify-items-center tw-font-bold">
+      <li (click)="routerMethod.toHome()" class="tw-cursor-pointer">Home</li>
+      <li class="tw-cursor-pointer">FAQ</li>
+      <li class="tw-cursor-pointer">Shop</li>
+      <li class="tw-cursor-pointer">About us</li>
+      <li class="tw-cursor-pointer">Contact us</li>
     </ul>
   </div>
 </div>
