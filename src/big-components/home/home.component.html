@@ -14,11 +14,11 @@
 
   <div class="container">
     <div class="tw-text-center tw-grid tw-justify-items-center tw-mt-36 tw-mb-12">
-      <h1 class="tw-text-2xl tw-font-semibold">Featured Products</h1>
+      <h1 class="tw-text-2xl tw-font-medium">Featured Products</h1>
       <div class="underline"></div>
     </div>
 
-    <div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-16">
+    <div class="tw-grid tw-gap-7 tw-grid-cols-1 md:tw-gap-14 lg:tw-gap-16 lg:tw-grid-cols-2">
       <div class="tw-grid tw-grid-cols-2 prod-shadow tw-rounded-md">
         <img alt="" class="tw-ml-[-1rem]" src="assets/img/fans/fan-2.png">
         <div class="tw-self-center">
@@ -26,10 +26,12 @@
           <p class="tw-font-light">30-inch, Industrial Stand Fan</p>
           <img alt="" src="assets/img/Rating.png">
           <button class="color-main tw-mt-7 tw-font-semibold">Buy Now</button>
-          <span><object class="tw-h-2 tw-inline tw-ml-2" data="assets/svg/play-free-icon-font.svg" type=""></object></span>
+          <span><object class="tw-h-2 tw-inline tw-ml-2" data="assets/svg/play-free-icon-font.svg"
+                        type=""></object></span>
 
         </div>
       </div>
+
       <div class="tw-grid tw-grid-cols-2 prod-shadow tw-rounded-md">
         <img alt="" class="tw-ml-[-1rem]" src="assets/img/fans/fan-2.png">
         <div class="tw-self-center">
@@ -37,10 +39,25 @@
           <p class="tw-font-light">30-inch, Industrial Stand Fan</p>
           <img alt="" src="assets/img/Rating.png">
           <button class="color-main tw-mt-7 tw-font-semibold">Buy Now</button>
-          <span><object class="tw-h-2 tw-inline tw-ml-2" data="assets/svg/play-free-icon-font.svg" type=""></object></span>
+          <span><object class="tw-h-2 tw-inline tw-ml-2" data="assets/svg/play-free-icon-font.svg"
+                        type=""></object></span>
 
         </div>
       </div>
+
+      <div class="tw-grid tw-grid-cols-2 prod-shadow tw-rounded-md">
+        <img alt="" class="tw-ml-[-1rem]" src="assets/img/fans/fan-2.png">
+        <div class="tw-self-center">
+          <p class="tw-font-bold tw-mb-2">Vector SFSI750NW</p>
+          <p class="tw-font-light">30-inch, Industrial Stand Fan</p>
+          <img alt="" src="assets/img/Rating.png">
+          <button class="color-main tw-mt-7 tw-font-semibold">Buy Now</button>
+          <span><object class="tw-h-2 tw-inline tw-ml-2" data="assets/svg/play-free-icon-font.svg"
+                        type=""></object></span>
+
+        </div>
+      </div>
+
     </div>
 
 
@@ -49,128 +66,124 @@
 </section>
 
 
-<div class="popular">
-  <div class="title">
-    <h1>Popular Categories</h1>
-    <div class="underline"></div>
-  </div>
-  <swiper
-    [config]="popular_category_config"
-    class="popular-products-categories">
-    <ng-template class="popular-product-category" swiperSlide>
-      <img alt="" src="assets/img/fans/fan-1.jpg">
-      <p>Wall Fan</p>
-      <p>420 Products</p>
-      <button class="pop-button">Buy Now</button>
-      <span><object class="svg" data="assets/svg/play-free-icon-font.svg" type=""></object></span>
-    </ng-template>
-    <ng-template class="popular-product-category" swiperSlide>
-      <img alt="" src="assets/img/fans/fan-1.jpg">
-      <p>Desk Fan</p>
-      <p>420 Products</p>
-      <button class="pop-button">Buy Now</button>
-      <span><object class="svg" data="assets/svg/play-free-icon-font.svg" type=""></object></span>
-    </ng-template>
-    <ng-template class="popular-product-category" swiperSlide>
-      <img alt="" src="assets/img/fans/fan-1.jpg">
-      <p>Desk Fan</p>
-      <p>420 Products</p>
-      <button class="pop-button">Buy Now</button>
-      <span><object class="svg" data="assets/svg/play-free-icon-font.svg" type=""></object></span>
-    </ng-template>
-    <ng-template class="popular-product-category" swiperSlide>
-      <img alt="" src="assets/img/fans/fan-1.jpg">
-      <p>Desk Fan</p>
-      <p>420 Products</p>
-      <button class="pop-button">Buy Now</button>
-      <span><object class="svg" data="assets/svg/play-free-icon-font.svg" type=""></object></span>
-    </ng-template>
-    <ng-template class="popular-product-category" swiperSlide>
-      <img alt="" src="assets/img/fans/fan-1.jpg">
-      <p>Desk Fan</p>
-      <p>420 Products</p>
-      <button class="pop-button">Buy Now</button>
-      <span><object class="svg" data="assets/svg/play-free-icon-font.svg" type=""></object></span>
-    </ng-template>
-    <ng-template class="popular-product-category" swiperSlide>
-      <img alt="" src="assets/img/fans/fan-1.jpg">
-      <p>Desk Fan</p>
-      <p>420 Products</p>
-      <button class="pop-button">Buy Now</button>
-      <span><object class="svg" data="assets/svg/play-free-icon-font.svg" type=""></object></span>
-    </ng-template>
-  </swiper>
-</div>
+<section>
+  <div class="container">
+    <div class="tw-text-center tw-grid tw-justify-items-center tw-mt-36 tw-mb-12">
+      <h1 class="tw-text-2xl tw-font-medium">Popular Categories</h1>
+      <div class="underline"></div>
+    </div>
 
-<div class="hot-deals">
-  <div class="title">
-    <h1>Hot Deals</h1>
-    <div class="underline"></div>
+    <swiper
+      [config]="popular_category_config"
+      class="">
+      <ng-template swiperSlide>
+        <div>
+          <img alt="" class="border-main tw-border tw-rounded-md tw-py-4" src="assets/img/fans/fan-1.jpg">
+          <p class="tw-font-bold tw-mt-7">Wall Fan</p>
+          <p class="tw-font-light">420 Products</p>
+          <button class="color-main tw-mt-5 tw-font-bold">Browse</button>
+          <span><object class="tw-h-2 tw-inline tw-ml-2" data="assets/svg/play-free-icon-font.svg"
+                        type=""></object></span>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div>
+          <img alt="" class="border-main tw-border tw-rounded-md tw-py-4" src="assets/img/fans/fan-1.jpg">
+          <p class="tw-font-bold tw-mt-7">Wall Fan</p>
+          <p class="tw-font-light">420 Products</p>
+          <button class="color-main tw-mt-5 tw-font-bold">Browse</button>
+          <span><object class="tw-h-2 tw-inline tw-ml-2" data="assets/svg/play-free-icon-font.svg"
+                        type=""></object></span>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div>
+          <img alt="" class="border-main tw-border tw-rounded-md tw-py-4" src="assets/img/fans/fan-1.jpg">
+          <p class="tw-font-bold tw-mt-7">Wall Fan</p>
+          <p class="tw-font-light">420 Products</p>
+          <button class="color-main tw-mt-5 tw-font-bold">Browse</button>
+          <span><object class="tw-h-2 tw-inline tw-ml-2" data="assets/svg/play-free-icon-font.svg"
+                        type=""></object></span>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div>
+          <img alt="" class="border-main tw-border tw-rounded-md tw-py-4" src="assets/img/fans/fan-1.jpg">
+          <p class="tw-font-bold tw-mt-7">Wall Fan</p>
+          <p class="tw-font-light">420 Products</p>
+          <button class="color-main tw-mt-5 tw-font-bold">Browse</button>
+          <span><object class="tw-h-2 tw-inline tw-ml-2" data="assets/svg/play-free-icon-font.svg"
+                        type=""></object></span>
+        </div>
+      </ng-template>
+    </swiper>
+
   </div>
-  <swiper
-    [config]="hot_deals_config"
-    class="hot-deal-products">
-    <ng-template swiperSlide>
-      <div class="product">
-        <img alt="" class="image-product" src="assets/img/fans/fan-2.png">
-        <div class="product-text">
-          <p class="product-category">Stand Fan</p>
-          <p class="product-title">Vector SFSI750NW</p>
-          <p class="product-subtitle">30-inch, Industrial Stand Fan</p>
-          <img alt="" class="rating" src="assets/img/Rating.png">
-          <span class="discounted-price">₱ 2,500</span> <span class="regular-price">₱ 3,500</span>
+
+</section>
+
+<section>
+  <div class="container">
+    <div class="tw-text-center tw-grid tw-justify-items-center tw-mt-36 tw-mb-12">
+      <h1 class="tw-text-2xl tw-font-medium">Hot Deals</h1>
+      <div class="underline"></div>
+    </div>
+
+    <swiper
+      [config]="hot_deals_config"
+      class="hot-deal-products">
+      <ng-template swiperSlide>
+        <div class="border-main tw-border tw-grid tw-grid-cols-2 tw-rounded-md">
+          <img alt="" class="image-product" src="assets/img/fans/fan-2.png">
+          <div class="tw-place-self-center tw-w-11/12">
+            <p class="tw-font-light">Stand Fan</p>
+            <p class="tw-font-bold tw-mb-4">Vector SFSI750NW</p>
+            <p class="tw-font-light">30-inch, Industrial Stand Fan</p>
+            <img alt="" class="tw-mb-7" src="assets/img/Rating.png">
+            <span class="tw-font-bold tw-mr-2 color-main tw-text-2xl">₱ 2,500</span> <span class="tw-line-through">₱ 3,500</span>
+          </div>
         </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="product">
-        <img alt="" class="image-product" src="assets/img/fans/fan-2.png">
-        <div class="product-text">
-          <p class="product-category">Stand Fan</p>
-          <p class="product-title">Vector SFSI750NW</p>
-          <p class="product-subtitle">30-inch, Industrial Stand Fan</p>
-          <img alt="" class="rating" src="assets/img/Rating.png">
-          <span class="discounted-price">₱ 2,500</span> <span class="regular-price">₱ 3,500</span>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="border-main tw-border tw-grid tw-grid-cols-2 tw-rounded-md">
+          <img alt="" class="image-product" src="assets/img/fans/fan-2.png">
+          <div class="tw-place-self-center tw-w-11/12">
+            <p class="tw-font-light">Stand Fan</p>
+            <p class="tw-font-bold tw-mb-4">Vector SFSI750NW</p>
+            <p class="tw-font-light">30-inch, Industrial Stand Fan</p>
+            <img alt="" class="tw-mb-7" src="assets/img/Rating.png">
+            <span class="tw-font-bold tw-mr-2 color-main tw-text-2xl">₱ 2,500</span> <span class="tw-line-through">₱ 3,500</span>
+          </div>
         </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="product">
-        <img alt="" class="image-product" src="assets/img/fans/fan-2.png">
-        <div class="product-text">
-          <p class="product-category">Stand Fan</p>
-          <p class="product-title">Vector SFSI750NW</p>
-          <p class="product-subtitle">30-inch, Industrial Stand Fan</p>
-          <img alt="" class="rating" src="assets/img/Rating.png">
-          <span class="discounted-price">₱ 2,500</span> <span class="regular-price">₱ 3,500</span>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="border-main tw-border tw-grid tw-grid-cols-2 tw-rounded-md">
+          <img alt="" class="image-product" src="assets/img/fans/fan-2.png">
+          <div class="tw-place-self-center tw-w-11/12">
+            <p class="tw-font-light">Stand Fan</p>
+            <p class="tw-font-bold tw-mb-4">Vector SFSI750NW</p>
+            <p class="tw-font-light">30-inch, Industrial Stand Fan</p>
+            <img alt="" class="tw-mb-7" src="assets/img/Rating.png">
+            <span class="tw-font-bold tw-mr-2 color-main tw-text-2xl">₱ 2,500</span> <span class="tw-line-through">₱ 3,500</span>
+          </div>
         </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="product">
-        <img alt="" class="image-product" src="assets/img/fans/fan-2.png">
-        <div class="product-text">
-          <p class="product-category">Stand Fan</p>
-          <p class="product-title">Vector SFSI750NW</p>
-          <p class="product-subtitle">30-inch, Industrial Stand Fan</p>
-          <img alt="" class="rating" src="assets/img/Rating.png">
-          <span class="discounted-price">₱ 2,500</span> <span class="regular-price">₱ 3,500</span>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="border-main tw-border tw-grid tw-grid-cols-2 tw-rounded-md">
+          <img alt="" class="image-product" src="assets/img/fans/fan-2.png">
+          <div class="tw-place-self-center tw-w-11/12">
+            <p class="tw-font-light">Stand Fan</p>
+            <p class="tw-font-bold tw-mb-4">Vector SFSI750NW</p>
+            <p class="tw-font-light">30-inch, Industrial Stand Fan</p>
+            <img alt="" class="tw-mb-7" src="assets/img/Rating.png">
+            <span class="tw-font-bold tw-mr-2 color-main tw-text-2xl">₱ 2,500</span> <span class="tw-line-through">₱ 3,500</span>
+          </div>
         </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="product">
-        <img alt="" class="image-product" src="assets/img/fans/fan-2.png">
-        <div class="product-text">
-          <p class="product-category">Stand Fan</p>
-          <p class="product-title">Vector SFSI750NW</p>
-          <p class="product-subtitle">30-inch, Industrial Stand Fan</p>
-          <img alt="" class="rating" src="assets/img/Rating.png">
-          <span class="discounted-price">₱ 2,500</span> <span class="regular-price">₱ 3,500</span>
-        </div>
-      </div>
-    </ng-template>
-  </swiper>
-</div>
+      </ng-template>
+    </swiper>
+
+  </div>
+</section>
+
 
 

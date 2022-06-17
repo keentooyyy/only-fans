@@ -15,30 +15,20 @@ export class HomeComponent implements OnInit {
 
   popular_category_config: SwiperOptions = {
     modules: [Navigation], slidesPerView: 1, slidesPerGroup: 1, navigation: true, spaceBetween: 0, breakpoints: {
-      550: {
+      576: {
         slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 20
       },
-      840: {
+      992: {
         slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 20
-      },
-      1250: {
-        slidesPerView:4,
-        slidesPerGroup:4,
-        spaceBetween:20
       }
     }
   }
   hot_deals_config: SwiperOptions = {
     modules: [Navigation], slidesPerView: 1, slidesPerGroup: 1, navigation: true, // spaceBetween: 10,
     breakpoints: {
-      850: {
+      992: {
         slidesPerView:2,
         slidesPerGroup:2,
-        spaceBetween:20
-      },
-      1050: {
-        slidesPerView:3,
-        slidesPerGroup:3,
         spaceBetween:20
       },
     }

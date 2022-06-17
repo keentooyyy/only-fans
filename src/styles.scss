@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import "bootstrap/scss/bootstrap-grid";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import "swiper/swiper-bundle.css";
+@import "bootstrap/scss/bootstrap-grid";
 
 $nav-box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.37);
 $footer-box-shadow: 0px -4px 30px 0px rgba(0, 0, 0, 0.37);
