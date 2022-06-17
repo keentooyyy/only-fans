@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   title = "Home"
 
   popular_category_config: SwiperOptions = {
-    modules: [Navigation], slidesPerView: 1, slidesPerGroup: 1, navigation: true, spaceBetween: 0, breakpoints: {
+    modules: [Navigation], slidesPerView: 1, slidesPerGroup: 1, navigation: true, spaceBetween: 20, breakpoints: {
       576: {
         slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 20
       },
@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     }
   }
   hot_deals_config: SwiperOptions = {
-    modules: [Navigation], slidesPerView: 1, slidesPerGroup: 1, navigation: true, // spaceBetween: 10,
+    modules: [Navigation], slidesPerView: 1, slidesPerGroup: 1, navigation: true,  spaceBetween: 20,
     breakpoints: {
       992: {
         slidesPerView:2,
