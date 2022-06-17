@@ -1,8 +1,6 @@
 @import "src/styles";
 
-.bg-main {
-  background-color: $main-color;
-}
+
 
 .underline {
   width: 80px;
@@ -13,10 +11,6 @@
   box-shadow: $product-box-shadow;
 }
 
-.color-main{
-  color: $main-color;
-}
-
-.border-main {
-  border-color: $outline-color;
+.bg-main {
+  background-color: $main-color;
 }
