@@ -20,7 +20,10 @@ export class HomeComponent implements OnInit {
       },
       992: {
         slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 20
-      }
+      },
+      1200: {
+        slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 20
+      },
     }
   }
   hot_deals_config: SwiperOptions = {
@@ -29,6 +32,11 @@ export class HomeComponent implements OnInit {
       992: {
         slidesPerView:2,
         slidesPerGroup:2,
+        spaceBetween:20
+      },
+      1200: {
+        slidesPerView:3,
+        slidesPerGroup:3,
         spaceBetween:20
       },
     }
