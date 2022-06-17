@@ -11,6 +11,8 @@ export class CartComponent implements OnInit {
   title = "Shopping Cart"
   price = 3000
   subtotal = 0
+  order_total = 0
+  shipping_fee = 500
   constructor(private TitleService: Title) {
   }
 
@@ -40,6 +42,7 @@ export class CartComponent implements OnInit {
   }
   calcSubtotal(){
     this.subtotal = this.quantity.value * this.price
+    this.order_total = this.subtotal + this.shipping_fee
   }
 
 }
