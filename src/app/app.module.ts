@@ -7,12 +7,13 @@ import {AppComponent} from './app.component';
 import {NavbarComponent} from '../shared-components/navbar/navbar.component';
 import {FooterComponent} from '../shared-components/footer/footer.component';
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
-import { HomeModule } from '../big-components/home/home.module';
+import {HomeModule} from '../big-components/home/home.module';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent ],
+  declarations: [AppComponent, NavbarComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule, HomeModule],
   providers: [Title, {provide: LocationStrategy, useClass: HashLocationStrategy}],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

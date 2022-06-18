@@ -1,1 +1,91 @@
-<p>checkout works!</p>
+<app-route-banner currentRoute="Checkout"></app-route-banner>
+<section class="container lg:tw-grid lg:tw-grid-cols-2 lg:tw-gap-5 lg:tw-mt-14">
+  <div class=" border-main tw-border tw-rounded-md tw-py-5 tw-px-5 xs:tw-mt-7 lg:tw-mt-0 lg:tw-row-span-2 tw-h-fit">
+    <h1 class="tw-font-extrabold tw-text-xl">SHIPPING ADDRESS</h1>
+    <div class="underline tw-mt-1 tw-mb-5"></div>
+
+    <div class="tw-mb-3">
+      <div class="tw-mb-2 tw-font-light tw-text-xl">Email</div>
+      <input class="border-main tw-border tw-rounded-sm tw-w-full focus:tw-outline-0 tw-h-12 tw-px-3" type="text" name="" >
+    </div>
+
+    <div class="tw-mb-3">
+      <div class="tw-mb-2 tw-font-light tw-text-xl">First Name</div>
+      <input class="border-main tw-border tw-rounded-sm tw-w-full focus:tw-outline-0 tw-h-12 tw-px-3" type="text" name="" >
+    </div>
+
+    <div class="tw-mb-3">
+      <div class="tw-mb-2 tw-font-light tw-text-xl">Last Name</div>
+      <input class="border-main tw-border tw-rounded-sm tw-w-full focus:tw-outline-0 tw-h-12 tw-px-3" type="text" name="" >
+    </div>
+
+    <div class="tw-mb-3">
+      <div class="tw-mb-2 tw-font-light tw-text-xl">Country</div>
+      <input class="border-main tw-border tw-rounded-sm tw-w-full focus:tw-outline-0 tw-h-12 tw-px-3" type="text" name="" >
+    </div>
+
+    <div class="tw-mb-3">
+      <div class="tw-mb-2 tw-font-light tw-text-xl">State/Province</div>
+      <input class="border-main tw-border tw-rounded-sm tw-w-full focus:tw-outline-0 tw-h-12 tw-px-3" type="text" name="" >
+    </div>
+
+    <div class="tw-grid tw-grid-cols-3 tw-gap-5">
+      <div class="tw-mb-3">
+        <div class="tw-mb-2 tw-font-light tw-text-xl">Zip Code</div>
+        <input class="border-main tw-border tw-rounded-sm tw-w-full focus:tw-outline-0 tw-h-12 tw-px-3" type="text" name="" >
+      </div>
+      <div class="tw-mb-3 tw-col-span-2">
+        <div class="tw-mb-2 tw-font-light tw-text-xl">Mobile Number</div>
+        <input class="border-main tw-border tw-rounded-sm tw-w-full focus:tw-outline-0 tw-h-12 tw-px-3" type="text" name="" >
+      </div>
+    </div>
+
+  </div>
+
+  <div class=" border-main tw-border tw-rounded-md tw-py-5 tw-px-5 tw-mt-5 lg:tw-mt-0">
+    <h1 class="tw-font-extrabold tw-text-xl">PAYMENT METHOD</h1>
+    <div class="underline tw-mt-1 tw-mb-5"></div>
+
+    <div>
+      <input type="radio" name="Payment">
+      <span class="tw-ml-5 tw-font-light tw-text-xl">Bank Transfer</span>
+    </div>
+
+    <div>
+      <input type="radio" name="Payment">
+      <span class="tw-ml-5 tw-font-light tw-text-xl">Cash on Delivery</span>
+    </div>
+
+    <div>
+      <input type="radio" name="Payment">
+      <span class="tw-ml-5 tw-font-light tw-text-xl">E-Wallet(s)</span>
+    </div>
+
+
+
+  </div>
+
+  <div class=" border-main tw-border tw-rounded-md tw-py-5 tw-px-5 tw-mt-5 lg:tw-mt-0">
+    <h1 class="tw-font-extrabold tw-text-xl">CART SUMMARY</h1>
+    <div class="underline tw-mt-1 tw-mb-5"></div>
+
+    <div>
+      <app-cart-item [withClose]="false"></app-cart-item>
+
+      <button
+        class="tw-bg-transparent outline-btn tw-block tw-w-3/5 xs:tw-mt-12 lg:tw-mt-0 tw-py-3 tw-font-bold color-main tw-rounded-full lg:tw-mt-6">
+        CONTINUE SHOPPING
+      </button>
+
+      <hr class="tw-mt-7">
+
+      <app-cart-summary [withVoucher]="false" [withBorder]="false"></app-cart-summary>
+    </div>
+
+
+
+
+  </div>
+  <button class="bg-main tw-block tw-w-full xs:tw-mt-3 lg:tw-mt-0 tw-py-4 tw-font-bold tw-text-white tw-rounded-full tw-mb-9 lg:tw-col-span-2 xl:tw-col-span-1 xl:tw-col-start-2">PLACE ORDER
+  </button>
+</section>

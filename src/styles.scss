@@ -34,3 +34,13 @@ $outline-color: #707070;
 .bg-main {
   background-color: $main-color;
 }
+
+.underline {
+  width: 80px;
+  margin-top: 10px;
+  border-bottom: $main-color solid 2px;
+}
+
+.outline-btn {
+  border: solid 1px $main-color;
+}

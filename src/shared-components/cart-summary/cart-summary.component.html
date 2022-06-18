@@ -1,0 +1,11 @@
+
+<div  class="tw-grid tw-grid-cols-2 tw-rounded-md border-main tw-mt-5" [ngClass]="{'tw-border-none tw-p-0' : !withBorder, 'tw-p-5 tw-border': withBorder}">
+  <div>Subtotal</div>
+  <div class="color-main tw-text-end">₱ 3,000</div>
+  <div>Shipping fee</div>
+  <div class="color-main tw-text-end">₱ 500</div>
+  <div class="tw-font-bold tw-text-xl" [ngClass]="{'tw-mt-7': !withBorder}">Order Total</div>
+  <div class="color-main tw-text-xl tw-text-end tw-font-bold" [ngClass]="{'tw-mt-7': !withBorder}">₱ 3,500</div>
+  <div [ngClass]="withVoucher ?  'tw-block' : 'tw-hidden'" class="tw-mt-7">Enter Voucher</div>
+  <input [ngClass]="withVoucher ?  'tw-block' : 'tw-hidden'" class="tw-place-self-end tw-border border-main tw-rounded-sm tw-mt-7 tw-text-end tw-w-3/5" type="text">
+</div>
