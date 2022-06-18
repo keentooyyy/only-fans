@@ -1,5 +1,5 @@
 @import "src/styles.scss";
-nav {
+.nav-shadow {
   box-shadow: $nav-box-shadow;
 }
 
@@ -9,7 +9,7 @@ nav {
 }
 
 @media (min-width: 992px){
-  nav {
+  .nav-shadow {
     box-shadow: none;
   }
 }

@@ -6,9 +6,10 @@ import { HomeComponent } from './home.component';
 import {SwiperModule} from "swiper/angular";
 
 
+
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     CommonModule,

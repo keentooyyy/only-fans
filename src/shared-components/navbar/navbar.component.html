@@ -1,7 +1,7 @@
-<nav>
+<nav class="nav-shadow">
   <div class="container tw-grid tw-grid-cols-3 tw-items-center xs:tw-py-5 lg:tw-py-4 tw-justify-items-start">
 
-    <div (click)="routerMethod.toLogin()" class="tw-h-10 tw-cursor-pointer lg:tw-grid xs:tw-hidden lg:tw-grid-cols-2 lg:tw-items-center">
+    <div (click)="routerMethod.toLogin()"  class=" tw-h-10 tw-cursor-pointer lg:tw-grid xs:tw-hidden lg:tw-grid-cols-2 lg:tw-items-center">
       <svg class="" height="r" style="enable-background:new 0 0 512 512" version="1.1" viewBox="0 0 24 24" width="" x="0"
            xml:space="preserve"
            xmlns="http://www.w3.org/2000/svg" y="0"><g><path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z" data-original="#000000" fill="#00aff0" xmlns="http://www.w3.org/2000/svg"/><path
@@ -11,7 +11,7 @@
       <div class="tw-cursor-pointer tw-text-xs tw-w-full">My Account</div>
     </div>
 
-    <div class="lg:tw-hidden xs:tw-h-7 md:tw-h-10 ">
+    <div (click)="test()" class="tw-cursor-pointer lg:tw-hidden xs:tw-h-7 md:tw-h-10 ">
       <svg class="" height="" style="enable-background:new 0 0 512 512" version="1.1" viewBox="0 0 490.667 490.667" width=""
            x="0" xml:space="preserve"
            xmlns="http://www.w3.org/2000/svg" y="0"><g>
@@ -68,14 +68,13 @@
     </div>
 
   </div>
-
 </nav>
 
-<div class="xs:tw-hidden lg:tw-flex tw-justify-center tw-border border-main">
+<div [ngClass]="showNav ? '' : 'tw-hidden'" class=" lg:tw-flex tw-justify-center tw-border border-main">
 
-  <div class="tw-flex tw-justify-center tw-w-9/12 tw-my-10">
+  <div class="tw-flex tw-justify-center lg:tw-w-9/12 lg:tw-my-10">
 
-    <ul class=" tw-grid tw-w-full tw-grid-cols-5 tw-justify-items-center tw-font-bold">
+    <ul class="xs:tw-gap-3 tw-grid tw-w-full  lg:tw-grid-cols-5 lg:tw-justify-items-center tw-font-bold">
 
       <li (click)="routerMethod.toHome()" class="tw-cursor-pointer">Home</li>
       <li class="tw-cursor-pointer">FAQ</li>
@@ -87,3 +86,6 @@
   </div>
 
 </div>
+
+
+
