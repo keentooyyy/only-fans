@@ -22,4 +22,7 @@ export class RouterMethodsService {
   toRegister(){
     this.router.navigateByUrl('register')
   }
+  toContactUs(){
+    this.router.navigateByUrl('contact-us')
+  }
 }
