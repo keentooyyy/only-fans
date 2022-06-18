@@ -6,7 +6,8 @@ const routes: Routes = [
   { path: '/', loadChildren: () => import('../big-components/home/home.module').then(m => m.HomeModule) },
   { path: 'cart', loadChildren: () => import('../big-components/cart/cart.module').then(m => m.CartModule) },
   { path: 'checkout', loadChildren: () => import('../big-components/checkout/checkout.module').then(m => m.CheckoutModule) },
-  { path: 'login', loadChildren: () => import('../big-components/login/login.module').then(m => m.LoginModule) }
+  { path: 'login', loadChildren: () => import('../big-components/login/login.module').then(m => m.LoginModule) },
+  { path: 'register', loadChildren: () => import('../big-components/register/register.module').then(m => m.RegisterModule) }
 ];
 
 @NgModule({

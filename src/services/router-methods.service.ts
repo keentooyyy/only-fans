@@ -19,4 +19,7 @@ export class RouterMethodsService {
   toLogin(){
     this.router.navigateByUrl('login')
   }
+  toRegister(){
+    this.router.navigateByUrl('register')
+  }
 }
