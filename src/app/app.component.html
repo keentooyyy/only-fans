@@ -1,5 +1,10 @@
 
+<mat-sidenav-container>
+  <mat-sidenav #sidenav class="tw-w-6/12" fixedInViewport="true"x>Start</mat-sidenav>
+  <mat-sidenav-content class="tw-bg-white">
+    <app-navbar (hamclick)="hamclicked()" #navbar></app-navbar>
+    <router-outlet></router-outlet>
+    <app-footer [navbar]="navbar"></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
-<app-navbar #second></app-navbar>
-<router-outlet></router-outlet>
-<app-footer [second]="second"></app-footer>

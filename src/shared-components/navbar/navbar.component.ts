@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {RouterMethodsService} from "../../services/router-methods.service";
 
 @Component({
@@ -8,8 +8,8 @@ import {RouterMethodsService} from "../../services/router-methods.service";
 })
 export class NavbarComponent implements OnInit {
 
-
-  showNav = false
+  @Output()
+  hamclick: EventEmitter<any> = new EventEmitter<any>()
   constructor(public routerMethod: RouterMethodsService) {
   }
 
@@ -17,11 +17,6 @@ export class NavbarComponent implements OnInit {
   }
 
   test(){
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
-    this.showNav = !this.showNav
+    this.hamclick.emit('ham')
   }
 }
