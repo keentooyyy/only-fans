@@ -16,4 +16,7 @@ export class RouterMethodsService {
   toCheckout(){
     this.router.navigateByUrl('checkout')
   }
+  toLogin(){
+    this.router.navigateByUrl('login')
+  }
 }
