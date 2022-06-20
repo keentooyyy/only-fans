@@ -1,15 +1,21 @@
 
 <mat-sidenav-container>
   <mat-sidenav #sidenav class="sm:tw-w-2/5 xs:tw-w-2/3" fixedInViewport="true">
-    <img alt="" src="assets/img/Only%20Fans%20Logo.png" class="tw-cursor-pointer tw-w-48 tw-mx-auto tw-py-5">
-    <div class="tw-w-9/12 tw-mx-auto tw-py-3 tw-px-3 tw-rounded-sm hover:tw-bg-blue-400 hover:tw-text-white hover:tw-cursor-pointer tw-mt-8">
-      <i class="fa-solid fa-circle-question"></i><span class="tw-ml-3">FAQ</span>
+
+    <div class="tw-w-9/12 tw-mx-auto tw-mt-5">
+      <img (click)="routerMethod.toHome()" alt="" src="assets/img/Only%20Fans%20Logo.png" class="tw-cursor-pointer">
     </div>
-    <div class="tw-w-9/12 tw-mx-auto tw-py-3 tw-px-3 tw-rounded-sm hover:tw-bg-blue-400 hover:tw-text-white hover:tw-cursor-pointer tw-mt-3">
-      <i class="fa-solid fa-user-plus"></i><span class="tw-ml-3">About us</span>
+
+    <div class="tw-w-9/12 tw-mx-auto tw-py-3 tw-px-3 tw-rounded-sm hover hover:tw-text-white hover:tw-cursor-pointer tw-mt-8 tw-flex tw-gap-5 tw-items-center ">
+      <i class="fa-solid fa-circle-question"></i><span class="">FAQ</span>
     </div>
-    <div class="tw-w-9/12 tw-mx-auto tw-py-3 tw-px-3 tw-rounded-sm hover:tw-bg-blue-400 hover:tw-text-white hover:tw-cursor-pointer tw-mt-3">
-      <i class="fa-solid fa-address-book"></i><span class="tw-ml-3">Contact us</span>
+
+    <div (click)="toAboutUs()" class="tw-w-9/12 tw-mx-auto tw-py-3 tw-px-3 tw-rounded-sm hover hover:tw-text-white hover:tw-cursor-pointer tw-mt-5 tw-flex tw-gap-5 tw-items-center ">
+      <i class="fa-solid fa-user-plus"></i><span class="">About us</span>
+    </div>
+
+    <div (click)="toContact()" class="tw-w-9/12 tw-mx-auto tw-py-3 tw-px-3 tw-rounded-sm hover hover:tw-text-white hover:tw-cursor-pointer tw-mt-5 tw-flex tw-gap-5 tw-items-center ">
+      <i class="fa-solid fa-address-book"></i><span class="">Contact us</span>
     </div>
   </mat-sidenav>
   <mat-sidenav-content class="tw-bg-white">

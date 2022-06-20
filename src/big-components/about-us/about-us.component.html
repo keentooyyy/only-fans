@@ -1,0 +1,69 @@
+<app-route-banner currentRoute="About Us"></app-route-banner>
+
+<section class="container">
+  <div class="xs:tw-mt-5 sm:tw-mt-7 md:tw-mt-12 lg:tw-grid lg: tw-grid-cols-2 tw-gap-x-10">
+    <img alt="" src="assets/img/pexels-fauxels-3183150.jpg">
+
+    <div>
+      <h1 class="xs:tw-text-2xl tw-font-bold xs:tw-mt-10 lg:tw-mt-0 lg:tw-text-3xl">ABOUT US</h1>
+      <div class="underline"></div>
+
+      <div class="tw-mt-10">
+        The main purpose of our website is to give you a hassle-free shopping experience for our beloved customers. Our
+        website is free to use and offers a variety of fans from which to choose. We came up with this idea because of
+        the other sites or apps that are limited to the specific item you are looking for. For example, fans you can
+        search and buy fans on any other app or site, but their category of fans is limited. But here on our site, we
+        specialize in fans only. We categorize our products into different categories. We have electric fans, computer
+        fans, and many more.
+      </div>
+
+    </div>
+
+
+    <div class="tw-grid tw-justify-items-center lg:tw-col-span-2">
+      <h1 class="xs:tw-text-2xl tw-font-bold tw-mt-24 lg:tw-text-3xl">MEET THE TEAM</h1>
+      <div class="underline"></div>
+    </div>
+
+    <div class="lg:tw-col-span-2">
+      <swiper
+        [config]="team_config"
+        class="tw-mt-14 tw-mb-5 tw-pb-14"
+      >
+        <ng-template swiperSlide>
+          <div>
+            <img alt="" src="assets/img/team%20pic.png">
+            <div class="tw-font-bold tw-text-center tw-text-xl tw-mt-6">DENMARK</div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div>
+            <img alt="" src="assets/img/team%20pic.png">
+            <div class="tw-font-bold tw-text-center tw-text-xl tw-mt-6">RAMILE</div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div>
+            <img alt="" src="assets/img/team%20pic.png">
+            <div class="tw-font-bold tw-text-center tw-text-xl tw-mt-6">JETHRO</div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div>
+            <img alt="" src="assets/img/team%20pic.png">
+            <div class="tw-font-bold tw-text-center tw-text-xl tw-mt-6">REIGN</div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div>
+            <img alt="" src="assets/img/team%20pic.png">
+            <div class="tw-font-bold tw-text-center tw-text-xl tw-mt-6">KENTOY</div>
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+
+
+  </div>
+
+</section>

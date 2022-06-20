@@ -25,4 +25,7 @@ export class RouterMethodsService {
   toContactUs(){
     this.router.navigateByUrl('contact-us')
   }
+  toAboutUs(){
+    this.router.navigateByUrl('about-us')
+  }
 }

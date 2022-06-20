@@ -40,8 +40,9 @@ $only-fans-theme: mat.define-light-theme((
 @tailwind utilities;
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-@import "swiper/swiper-bundle.css";
+@import "swiper/swiper-bundle.min.css";
 @import "bootstrap/scss/bootstrap-grid";
 
 
@@ -61,11 +62,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 $main-color: #00AFF0;
+$accent-color: #4797bb;
 $outline-color: #707070;
 
 .color-main {
   color: $main-color;
 }
+
 
 .border-main {
   border-color: $outline-color;

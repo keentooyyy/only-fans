@@ -1,3 +1,11 @@
+@import "src/styles";
+
 mat-sidenav-container, mat-sidenav-content{
   overflow: initial;
+}
+
+.hover{
+  &:hover{
+    background-color: $main-color;
+  }
 }
