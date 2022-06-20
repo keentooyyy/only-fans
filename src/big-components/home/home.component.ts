@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import Swiper, {Navigation, SwiperOptions} from "swiper";
+import {RouterMethodsService} from "../../services/router-methods.service";
 
 Swiper.use([Navigation])
 
@@ -32,18 +33,13 @@ export class HomeComponent implements OnInit {
       992: {
         slidesPerView:2,
         slidesPerGroup:2,
-        spaceBetween:20
-      },
-      1200: {
-        slidesPerView:3,
-        slidesPerGroup:3,
-        spaceBetween:20
-      },
+        spaceBetween:50
+      }
     }
   }
 
 
-  constructor(private TitleService: Title) {
+  constructor(private TitleService: Title, public routerMethod: RouterMethodsService) {
 
   }
 

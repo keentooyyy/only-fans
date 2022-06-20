@@ -29,18 +29,25 @@ export class AppComponent implements OnInit{
   getWidth(){
     this.innerwidth = window.innerWidth;
     if (this.innerwidth >= 992){
-      this.sideNav.close()
+      this.closeSideNav()
     }
+  }
 
+  closeSideNav(){
+    this.sideNav.close()
   }
   toContact(){
-    this.sideNav.close()
+    this.closeSideNav()
     this.routerMethod.toContactUs()
   }
 
   toAboutUs(){
-    this.sideNav.close()
+    this.closeSideNav()
     this.routerMethod.toAboutUs()
+  }
+  toHome(){
+    this.closeSideNav()
+    this.routerMethod.toHome()
   }
 }
 
