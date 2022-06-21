@@ -49,5 +49,9 @@ export class AppComponent implements OnInit{
     this.closeSideNav()
     this.routerMethod.toHome()
   }
+  toFAQ(){
+    this.closeSideNav()
+    this.routerMethod.toFAQ()
+  }
 }
 

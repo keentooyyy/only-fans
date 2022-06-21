@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'register', loadChildren: () => import('../big-components/register/register.module').then(m => m.RegisterModule) },
   { path: 'contact-us', loadChildren: () => import('../big-components/contact-us/contact-us.module').then(m => m.ContactUsModule) },
   { path: 'about-us', loadChildren: () => import('../big-components/about-us/about-us.module').then(m => m.AboutUsModule) },
+  { path: 'faq', loadChildren: () => import('../big-components/faq/faq.module').then(m => m.FaqModule) },
 ];
 
 @NgModule({
